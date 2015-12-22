@@ -16,7 +16,7 @@ body {
 }
 
 .hero {
-  background-image: url("../images/charcuterie.jpg");
+  background-image: url("../charcuterie.jpg");
   height: 800px;
   max-width: 1400px;
   width: 100%;
@@ -78,8 +78,7 @@ body, html {
 
     height : 70vh;
 
-
-    background-image: url("../images/charcuterie.jpg");
+    background-image: url("../charcuterie.jpg");
     background-attachment : fixed;
     background-position   : top center;
     background-size       : cover;
@@ -108,45 +107,6 @@ body, html {
       background-color:  blue;
 
     }
-  }
-
-  .bg__bar {
-    background-color:  blue;
-  }
-
-  .bg__baz {
-    background-image : url(
-      https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax3.jpg
-    ); 
-  }
-
-  .bg__bazz {
-    background-image : url(
-      https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg
-    ); 
-  }
-  
-  .bg__break {
-    box-shadow : inset 0 0 1em #111; 
-    
-    background-image : url(
-      https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax1.jpg
-    ); 
-  }
-  
-  .capture {
-    float : right;
-    
-    width : 200px;
-    
-    padding : 1em;
-    margin  : -1.5em 1em 0 0;
-    
-    text-indent : 0;
-    
-    background : rgba( #f3f3f3, 0.75 );
-    
-    box-shadow : 0 1px 0.125em #333;
   }
 }
 
