@@ -96,6 +96,7 @@ body, html {
     padding-top: 130px;
     padding-bottom: 200px;
     background-color: rgba(47,0,60,.5);
+    height: 100%;
   }
 
   .bg__foo, .bg__bazz {
@@ -108,6 +109,10 @@ body, html {
 
     }
   }
+}
+
+.about {
+  font-weight: 300;
 }
 
 article {
@@ -146,5 +151,16 @@ article {
 a {
   &, &:visited, &:active {
     color : #f66;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .parallax .hero-text {
+    font-size: 36px;
+  }
+  
+  .about .sean, 
+  .about .randy {
+    width: 90%;
   }
 }
