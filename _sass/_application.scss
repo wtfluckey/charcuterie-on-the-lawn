@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+    font-family: 'mayonaisecondensed';
+    src: url('../fonts/mayonaise-condensed-webfont.eot');
+    src: url('../fonts/mayonaise-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mayonaise-condensed-webfont.woff2') format('woff2'),
+         url('../fonts/mayonaise-condensed-webfont.woff') format('woff'),
+         url('../fonts/mayonaise-condensed-webfont.ttf') format('truetype'),
+         url('../fonts/mayonaise-condensed-webfont.svg#mayonaisecondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.hero {
+  background-image: url("../images/charcuterie.jpg");
+  height: 800px;
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
+}
+
+.layer {
+  //background-color: rgba(0, 40, 74, 0.7);
+  //background-color: rgba(74, 31, 0, 0.7);
+  background-color: rgba(0, 31, 5, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.hero-text {
+  font-family: 'mayonaisecondensed', sans-serif;
+  text-align: center;
+  color: #CCB4A3;
+  position: absolute;
+  top: 100px;
+  left: 30%;
+  font-size: 50px;
+}
+
+.about {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 1000px;
+  background: #222;
+  color: white;
+
+  .sean, .randy {
+    padding: 130px 20px 0;
+    width: 40%;
+    text-align: center;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
