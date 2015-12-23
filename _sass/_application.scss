@@ -1,6 +1,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -8,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @font-face {
@@ -154,10 +156,15 @@ a {
   .hero-header {
     position: inherit;
     background-color: rgba(47, 0, 60, .5);
-    padding: 10px 30px;
+    padding: 30px 80px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     border-bottom: 1px solid #CCB4A3;
     color: #CCB4A3;
+
+    a {
+      margin-right: 20px;
+    }
   }
 
   .hero-text {
@@ -186,14 +193,37 @@ a {
 }
 
 .hype {
-  height: 1000px;
   background-image: url("../images/farm.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: top center;
 
   .hype-layer {
     background-color: rgba(74, 31, 0, 0.7);
-    height: 1000px;
+    height: 600px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #ADADAD;
+
+    h1 {
+      font-family: 'mayonaisecondensed', sans-serif;
+      font-size: 50px;
+      padding-top: 70px;
+      color: #CCB4A3;
+    }
+  }
+
+  .footer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: rgba(74, 31, 0, 0.7);
+    height: 100px;
+    border-top: 1px solid #CCB4A3;
+    color: #CCB4A3;
+    padding: 30px 80px;
   }
 }
 
