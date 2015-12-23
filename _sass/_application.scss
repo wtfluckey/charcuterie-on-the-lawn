@@ -1,3 +1,11 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
 }
@@ -45,14 +53,63 @@ body {
 
 .about {
   font-family: 'Open Sans', sans-serif;
-  min-height: 1000px;
-  background: #222;
-  color: white;
+  min-height: auto;
+  background: #182322;
+  color: #ADADAD;
+  padding: 0 100px 100px;
+  opacity: 1;
+  background-image: url("../images/dark_geometric.png");
+  background-image: url("../images/dark_wood.png");
 
-  .sean, .randy {
-    padding: 130px 20px 0;
-    width: 40%;
+  h1, h2 {
+    font-family: 'mayonaisecondensed', sans-serif;
+    margin-bottom: 30px;
+    color: #7FA8A9;
+  }
+
+  .chefs {
+    margin-bottom: 50px;
+  }
+
+  .about-heading {
+    font-size: 50px;
+    padding-top: 70px;
     text-align: center;
+  }
+
+  .shawn, .randy {
+    padding: 40px 20px 0;
+    width: 45%;
+    text-align: center;
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+      margin-bottom: 50px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &.photo-shawn {
+        background-image: url("../images/partyshawn-copy.jpg");
+        transition: background-image .5s;
+        &:hover {
+          background-image: url("../images/chefshawn.jpg");
+          transition: background-image .5s;
+        }
+      }
+
+      &.photo-randy {
+        background-image: url("../images/randy.jpg");
+        transition: background-image .5s;
+        &:hover {
+          background-image: url("../images/randy2.png");
+          transition: background-image .5s;
+        }
+      }
+    }
   }
 }
 
@@ -72,11 +129,17 @@ body, html {
   font-family : sans-serif;
 }
 
+a {
+  color: #7FA8A9;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .parallax {
   [class*="bg__"] {
     position : relative;
-
-    height : 70vh;
 
     background-image: url("../charcuterie.jpg");
     background-attachment : fixed;
@@ -88,6 +151,15 @@ body, html {
     }
   }
 
+  .hero-header {
+    position: inherit;
+    background-color: rgba(47, 0, 60, .5);
+    padding: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #CCB4A3;
+    color: #CCB4A3;
+  }
+
   .hero-text {
     font-family: 'mayonaisecondensed', sans-serif;
     text-align: center;
@@ -95,6 +167,9 @@ body, html {
     font-size: 60px;
     padding-top: 130px;
     padding-bottom: 200px;
+    //background-color: rgba(0, 40, 74, 0.7);
+    //background-color: rgba(74, 31, 0, 0.7);
+    //background-color: rgba(0, 31, 5, 0.7);
     background-color: rgba(47,0,60,.5);
     height: 100%;
   }
@@ -103,16 +178,31 @@ body, html {
     height : 100vh;
   }
   
-  .bg__foo {
-    .bg-foo-layer {
-      background-color:  blue;
+}
 
-    }
+.about-charcuterie {
+  clear: both;
+  text-align: center;
+}
+
+.hype {
+  height: 1000px;
+  background-image: url("../images/farm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hype-layer {
+    background-color: rgba(74, 31, 0, 0.7);
+    height: 1000px;
   }
 }
 
 .about {
   font-weight: 300;
+}
+
+.clearfix {
+  clear: both;
 }
 
 article {
@@ -145,12 +235,6 @@ article {
       margin  : 0;
       padding : 0;
     }
-  }
-}
-
-a {
-  &, &:visited, &:active {
-    color : #f66;
   }
 }
 
