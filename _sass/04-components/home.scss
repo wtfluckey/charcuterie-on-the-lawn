@@ -1,33 +1,67 @@
 .home {
   &__hero {
     background-image: url("../images/table.jpg");
+    background-attachment: fixed;
     background-position   : top center;
     background-size       : cover;
     height: 100vh;
   }
 
   &__heroWrapper {
-    background-color: $background--green;
+    background-color: $background--navy;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 
   &__image {
     max-width: 400px;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    width: 50px;
+    margin: auto;
   }
 }
 
 .heroText {
   font-family: $decorative-font-family;
   color: $white;
-  font-size: 48px;
+  font-size: 3vw;
   text-align: center;
 
   &__large {
-    font-size: 120px;
+    font-size: 9vw;
+  }
+
+  &__medium {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    font-size: 40px;
+    margin-top: 15%;
+    color: #D4E6E6;
   }
 }
 
+.margin {
+
+  &--bottom {
+    margin-bottom: 30px;
+  }
+}
+
+
+.hype {
+  &__hero {
+    background-image: url("../images/sunset.jpg");
+    background-position   : top center;
+    background-size       : cover;
+    height: 600px;
+  }
+
+  &__heroWrapper{
+    height: 600px;
+    background-color: $background--orange;
+  }
+}
