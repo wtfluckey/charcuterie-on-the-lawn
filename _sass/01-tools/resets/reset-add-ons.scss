@@ -90,11 +90,11 @@ video {
 
 ins {
   text-decoration: none;
-  color: map-get($body, color);
+  color: $black;
 }
 
 mark {
-  color: map-get($body, color);
+  color: $black;
 }
 
 del {
@@ -135,7 +135,7 @@ hr {
   margin: 1em 0;
   padding: 0;
   border: 0;
-  border-top: $borderWidth--thin solid map-get($body, color);
+  border-top: $borderWidth--thin solid $black;
 }
 
 input,

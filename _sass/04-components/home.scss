@@ -1,0 +1,33 @@
+.home {
+  &__hero {
+    background-image: url("../images/table.jpg");
+    background-position   : top center;
+    background-size       : cover;
+    height: 100vh;
+  }
+
+  &__heroWrapper {
+    background-color: $background--green;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 400px;
+  }
+}
+
+.heroText {
+  font-family: $decorative-font-family;
+  color: $white;
+  font-size: 48px;
+  text-align: center;
+
+  &__large {
+    font-size: 120px;
+  }
+}
+
