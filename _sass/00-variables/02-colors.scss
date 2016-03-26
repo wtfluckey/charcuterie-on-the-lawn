@@ -1,11 +1,15 @@
-// Typography
-
-$base-font-family: "rawengulkregular", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
+// -----------------------------------------------------------------------------
+// Table of Contents
+//
+//  - COLORS
+//    - Brand Colors
+//    - Named Colors
+//    - Status Colors
+//    - Background Filters
+//
+// -----------------------------------------------------------------------------
+// !-- Brand Colors
+// -----------------------------------------------------------------------------
 
 // Colors
 
@@ -27,13 +31,3 @@ $grey-color-dark:  darken($grey-color, 25%);
 //background-color: rgba(74, 31, 0, 0.7);
 //background-color: rgba(0, 31, 5, 0.7);
 //background-color: rgba(47,0,60,.5);
-
-
-
-// Measurements
-
-$spacing-unit:     30px;
-
-$content-width:    800px;
-$on-palm:          600px;
-$on-laptop:        800px;

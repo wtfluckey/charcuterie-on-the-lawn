@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// Table of Contents
+//
+//  - Containers
+//  - Hero
+//  - Helper Classes
+//
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// !-- Containers
+// -----------------------------------------------------------------------------
+
+.l--container {
+  @include clearfix;
+
+  width: 100%;
+  max-width: $site--maxWidth;
+  margin: auto;
+  padding: ($gutter * 2);
+
+  &--tight {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+  }
+
+  &--xTight {
+    padding-top: $gutter--half;
+    padding-bottom: $gutter--half;
+  }
+}

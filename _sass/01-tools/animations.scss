@@ -1,0 +1,84 @@
+// -----------------------------------------------------------------------------
+// Table of Contents
+//
+// - Slide In Up
+// - Zoom In
+// - Fade In
+//
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// !-- Slide In Up
+// -----------------------------------------------------------------------------
+
+
+@keyframes slideInUp {
+  from {
+    visibility: visible;
+    transform: translate3d(0, 20%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  opacity: 1;
+
+  @include respond-to(medium) {
+    animation-name: slideInUp;
+    animation-duration: .75s;
+    animation-delay: .25s;
+    animation-fill-mode: both;
+    opacity: 1;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// !-- Zoom In
+// -----------------------------------------------------------------------------
+
+@keyframes zoomIn {
+  from {
+    transform: scale3d(.3, .3, .3);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+// -----------------------------------------------------------------------------
+// !-- Fade In
+// -----------------------------------------------------------------------------
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 1;
+
+  @include respond-to(medium) {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+  }
+}
+

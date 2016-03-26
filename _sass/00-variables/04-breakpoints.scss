@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// !-- BREAKPOINTS
+// -----------------------------------------------------------------------------
+
+$breakpoint--screen: "only screen";
+$breakpoint--landscape: "#{$breakpoint--screen} and (orientation: landscape)";
+$breakpoint--portrait: "#{$breakpoint--screen} and (orientation: portrait)";
+
+// Define breakpoints
+$breakpoints: (
+  extraSmall: 400px,
+  small: 500px,
+  medium: 700px,
+  large: 940px,
+  extraLarge: 1400px,
+);

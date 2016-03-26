@@ -1,23 +1,18 @@
 ---
-layout: default
+layout: custom
 ---
 
-<div class="home">
+<article>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="l--container">
+    <div class="row">
+      <div class="l--small--5 l--columns">
+        small 5
+      </div>
+      <div class="l--small--5 l--medium--7 l--columns">
+        medium 7
+      </div>
+    </div>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</article>
