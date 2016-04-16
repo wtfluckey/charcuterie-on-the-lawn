@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   a celebration of craft Charcuterie crafted by local chefs Shawn Bennigsdorf and Randy Brown.
   A large and diverse selection of cured meats, pates, and terrines will be available.
 baseurl: "/charcuterie-on-the-lawn" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.charcuterieonthelawn.com/" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
