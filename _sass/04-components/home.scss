@@ -31,7 +31,7 @@
   text-align: center;
 
   &__large {
-    font-size: 9vw;
+    font-size: 80px;
   }
 
   &__medium {
@@ -57,11 +57,35 @@
     background-image: url("../images/sunset.jpg");
     background-position   : top center;
     background-size       : cover;
-    height: 600px;
   }
 
   &__heroWrapper{
-    height: 600px;
+    height: 100vh;
     background-color: $background--orange;
+  }
+}
+
+.site-header {
+  border-bottom: $borderWidth--thin solid $white;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    margin-right: $gutter * 2;
+    font-size: 20px;
+    transition: color 0.5s ease;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      transition: color 0.5s ease;
+      color: #E5A4FF;
+    }
+  }
+
+  li {
+    display: inline;
   }
 }
