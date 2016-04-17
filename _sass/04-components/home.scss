@@ -59,6 +59,11 @@
     @include respond-to(medium) {
       padding: $gutter;
     }
+
+    &.form {
+      padding: $gutter * 3;
+      margin-top: $gutter;
+    }
   }
 }
 
