@@ -16,7 +16,11 @@
 
   width: 100%;
   margin: auto;
-  padding: ($gutter * 2);
+  padding: $gutter--half;
+
+  @include respond-to(medium) {
+    padding: $gutter;
+  }
 
   &--tight {
     padding: $gutter;

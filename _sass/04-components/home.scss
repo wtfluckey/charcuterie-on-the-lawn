@@ -51,8 +51,12 @@
     max-width: 900px;
     margin: auto;
     background: $background--purple;
-    padding: $gutter;
+    padding: $gutter--half;
     color: $white;
+
+    @include respond-to(medium) {
+      padding: $gutter;
+    }
   }
 }
 
@@ -113,5 +117,23 @@
     width: 100%;
     margin: auto;
     margin-bottom: $gutter--narrow;
+  }
+}
+
+.faq {
+  &__container {
+    max-width: 900px;
+    margin: auto;
+    background: $background--purple;
+    padding: $gutter--half;
+    color: $white;
+
+    @include respond-to(medium) {
+      padding: $gutter * 2;
+    }
+  }
+
+  &.margin--bottom {
+    margin-bottom: $gutter * 2;
   }
 }
