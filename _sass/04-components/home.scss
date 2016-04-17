@@ -81,11 +81,18 @@
   border-bottom: $borderWidth--thin solid $white;
 
   a {
+    display: block;
+    margin-bottom: $gutter--half;
     text-decoration: none;
     color: $white;
-    margin-right: $gutter * 2;
     font-size: 20px;
     transition: color 0.5s ease;
+
+    @include respond-to(small) {
+      display: inline-block;
+      margin-right: $gutter * 2;
+      margin-bottom: 0;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -99,5 +106,12 @@
 
   li {
     display: inline;
+  }
+
+  .logo {
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: $gutter--narrow;
   }
 }
