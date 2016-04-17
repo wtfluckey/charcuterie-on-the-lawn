@@ -20,3 +20,28 @@ $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+
+
+// -----------------------------------------------------------------------------
+// !-- Font Weights
+// -----------------------------------------------------------------------------
+
+$fontWeight--thin: 100;
+$fontWeight--light: 300;
+$fontWeight--normal: 400;
+$fontWeight--medium: 500;
+$fontWeight--bold: 700;
+
+// -----------------------------------------------------------------------------
+// !-- Font Sizes
+// -----------------------------------------------------------------------------
+
+$fontSizes: (
+  xXLarge: 2.5em,
+  xLarge: 1.875em,
+  large: 1.5em,
+  medium: 1.125em,
+  base: 1em,
+  small: .875em,
+  xSmall: .7em,
+);

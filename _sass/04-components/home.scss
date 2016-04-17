@@ -4,31 +4,35 @@
     background-attachment: fixed;
     background-position   : top center;
     background-size       : cover;
-    height: 100vh;
   }
 
   &__heroWrapper {
     background-color: $background--navy;
-    height: 100vh;
-    text-align: center;
+    height: 100%;
   }
 
   &__image {
-    max-width: 400px;
-    margin-bottom: 60px;
+    display: block;
+    max-height: 100vh;
+    width: 100%;
+    margin: auto;
+    margin-top: $gutter;
   }
 
   &__link {
     width: 50px;
     margin: auto;
   }
+
+  &__block {
+    height: 300px;
+    background: #340034;
+  }
 }
 
 .heroText {
   font-family: $decorative-font-family;
   color: $white;
-  font-size: 3vw;
-  text-align: center;
 
   &__large {
     font-size: 80px;
@@ -41,6 +45,14 @@
     font-size: 40px;
     margin-top: 15%;
     color: #D4E6E6;
+  }
+
+  &__background {
+    max-width: 900px;
+    margin: auto;
+    background: $background--purple;
+    padding: $gutter;
+    color: $white;
   }
 }
 
@@ -60,7 +72,7 @@
   }
 
   &__heroWrapper{
-    height: 100vh;
+    height: 100%;
     background-color: $background--orange;
   }
 }
