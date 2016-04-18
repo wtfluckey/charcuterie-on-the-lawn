@@ -199,3 +199,9 @@
   font-size: map-get($fontSizes, xSmall);
 
 }
+
+hr {
+  border-color: $white;
+  margin-top: $gutter;
+  margin-bottom: $gutter;
+}
