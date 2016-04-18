@@ -8,6 +8,7 @@ $breakpoint--portrait: "#{$breakpoint--screen} and (orientation: portrait)";
 
 // Define breakpoints
 $breakpoints: (
+  base: 0px,
   extraSmall: 400px,
   small: 500px,
   medium: 700px,

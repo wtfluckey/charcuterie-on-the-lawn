@@ -96,10 +96,11 @@
     margin-bottom: $gutter--half;
     text-decoration: none;
     color: $white;
-    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
     transition: color 0.5s ease;
 
-    @include respond-to(small) {
+    @include respond-to(large) {
       display: inline-block;
       margin-right: $gutter * 2;
       margin-bottom: 0;
@@ -120,10 +121,14 @@
   }
 
   .logo {
-    max-width: 300px;
+    max-width: 220px;
     width: 100%;
     margin: auto;
     margin-bottom: $gutter--narrow;
+
+    @include respond-to(large) {
+      margin-bottom: -$gutter--narrow;
+    }
   }
 }
 
@@ -142,5 +147,23 @@
 
   &.margin--bottom {
     margin-bottom: $gutter * 2;
+  }
+}
+
+.site-footer {
+  background: $black;
+
+  a {
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.5s ease;
+    margin-bottom: $gutter--narrow;
+    display: block;
+    color: $white;
+
+    &:hover {
+      transition: color 0.5s ease;
+      color: #E5A4FF;
+    }
   }
 }
