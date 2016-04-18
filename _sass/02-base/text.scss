@@ -25,6 +25,7 @@ h1 {
 
 h2 {
   font-size: map-get($fontSizes, large);
+  line-height: 30px;
   margin-bottom: $gutter--narrow;
 }
 

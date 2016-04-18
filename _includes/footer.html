@@ -1,38 +1,74 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+<footer class="siteFooter">
+  <div class="l--container">
+    <div class="siteFooter__container">
+      <div class="row">
+        <div class="l--small--12 l--medium--9 l--columns l--noMargin">
+          <ul class="siteFooter__links">
+            <div class="l--small--6 l--medium--4 l--columns l--noMargin">
+              <a href="events.html">
+                <li>
+                  Events
+                </li>
+              </a>
+            </div>
+            <div class="l--small--6 l--medium--4 l--columns l--noMargin">
+              <a href="about.html">
+                <li>
+                  About
+                </li>
+              </a>
+            </div>
+            <div class="l--small--6 l--medium--4 l--columns l--noMargin">
+              <a href="entertainment.html">
+                <li>
+                  Entertainment
+                </li>
+              </a>
+            </div>
+            <div class="l--small--6 l--medium--4 l--columns l--noMargin">
+              <a href="faq.html">
+                <li>
+                  FAQ
+                </li>
+              </a>
+            </div>
+            <div class="l--small--6 l--medium--4 l--columns l--noMargin">
+              <a href="contact.html">
+                <li>
+                  Contact
+                </li>
+              </a>
+            </div>
+            <div class="l--small--6 l--medium--4 l--columns l--noMargin">
+              <a href="https://www.facebook.com/events/991399827607967/" target="_blank">
+                <li>
+                  Facebook
+                </li>
+              </a>
+            </div>
+          </ul>
+        </div>
+        <div class="l--small--12 l--medium--3 l--columns l--noMargin">
+          <img src="images/pigonly.svg" class="siteFooter__logo">
+        </div>
       </div>
     </div>
+  </div>
+</footer>
 
+<footer class="secondaryFooter">
+  <div class="l--container l--container--xTight l--centered">
+    <div class="siteFooter__container">
+      <div class="row">
+        <div class="l--small--6 l--columns l--noMargin">
+          &#169; Charcuterie on the Lawn 2016
+
+        </div>
+        <div class="l--small--6 l--columns l--noMargin">
+          Website created by Aly Fluckey
+        </div>
+      </div>
+    </div>
   </div>
 
 </footer>
