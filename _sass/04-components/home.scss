@@ -205,3 +205,18 @@ hr {
   margin-top: $gutter;
   margin-bottom: $gutter;
 }
+
+.dante__photo {
+  width: 100%;
+  height: 350px;
+
+  background-image: url("../images/dante2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+
+  &:hover {
+    background-image: url("../images/dante.jpg");
+    transition: background-image 0.3s ease;
+  }
+}
