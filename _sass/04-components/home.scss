@@ -10,6 +10,7 @@
     background-color: $background--navy;
     height: 100%;
     padding-bottom: $gutter * 2;
+    color: $white;
   }
 
   &__image {
@@ -87,6 +88,7 @@
     height: 100%;
     background-color: $background--orange;
     padding-bottom: $gutter * 2;
+    color: $white;
   }
 }
 
@@ -104,7 +106,7 @@
 
     @include respond-to(large) {
       display: inline-block;
-      margin-right: $gutter * 2;
+      margin-right: $gutter;
       margin-bottom: 0;
     }
 
@@ -153,7 +155,7 @@
 }
 
 .siteFooter {
-  background: rgba(47, 0, 60, 1);
+  background: #3C0043;
   text-align: center;
 
   &__logo {
@@ -172,10 +174,6 @@
 
   &__links {
     margin-top: $gutter;
-
-    @include respond-to(medium) {
-      margin-top: 40px;
-    }
   }
 
   a {
@@ -218,5 +216,16 @@ hr {
   &:hover {
     background-image: url("../images/dante.jpg");
     transition: background-image 0.3s ease;
+  }
+}
+
+.nav__icon {
+  max-height: 20px;
+  width: 100%;
+}
+
+.nav {
+  &__pushDown {
+    padding-top: 7px;
   }
 }
